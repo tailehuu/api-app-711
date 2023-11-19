@@ -1,4 +1,4 @@
-# Sample RAILS API application
+# Sample Rails API application
 
 Steps are necessary to get the application up and running.
 
@@ -19,6 +19,7 @@ Steps are necessary to get the application up and running.
 - [pry-byebug](https://rubygems.org/gems/pry-byebug)
 - [rspec-rails](https://rubygems.org/gems/rspec-rails)
 - [rubocop](https://rubygems.org/gems/rubocop)
+- [simplecov](https://rubygems.org/gems/simplecov)
 - ...
 
 ## Configuration
