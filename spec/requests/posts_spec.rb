@@ -4,11 +4,17 @@ require 'rails_helper'
 
 describe '/posts', type: :request do
   let(:valid_attributes) do
-    skip('Add a hash of attributes valid for your model')
+    {
+      title: Faker::Lorem.sentence,
+      body: Faker::Lorem.paragraph
+    }
   end
 
   let(:invalid_attributes) do
-    skip('Add a hash of attributes invalid for your model')
+    {
+      title: '',
+      body: ''
+    }
   end
 
   let(:valid_headers) do
@@ -68,7 +74,10 @@ describe '/posts', type: :request do
   describe 'PATCH /update' do
     context 'with valid parameters' do
       let(:new_attributes) do
-        skip('Add a hash of attributes valid for your model')
+        {
+          title: 'new title',
+          body: 'new body'
+        }
       end
 
       it 'updates the requested post' do
@@ -76,7 +85,9 @@ describe '/posts', type: :request do
         patch post_url(post),
               params: { post: new_attributes }, headers: valid_headers, as: :json
         post.reload
-        skip('Add assertions for updated state')
+
+        expect(response.parsed_body['title']).to eq 'new title'
+        expect(response.parsed_body['body']).to eq 'new body'
       end
 
       it 'renders a JSON response with the post' do
