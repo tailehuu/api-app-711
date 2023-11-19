@@ -1,9 +1,6 @@
 # Sample RAILS API application
 
-This README would normally document whatever steps are necessary to get the
-application up and running.
-
-Things you may want to cover:
+Steps are necessary to get the application up and running.
 
 ## Ruby version
 
@@ -39,7 +36,13 @@ rails db:create
 ## Database initialization
 
 ```bash
-TBD 
+rails db:migrate
+```
+
+## Start server
+
+```bash
+rails s
 ```
 
 ## How to run the test suite
