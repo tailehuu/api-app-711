@@ -1,19 +1,19 @@
-# README
+# Sample RAILS API application
 
 This README would normally document whatever steps are necessary to get the
 application up and running.
 
 Things you may want to cover:
 
-* Ruby version
+## Ruby version
 
 - 3.2.2
 
-* Rails version
+## Rails version
 
 - 7.1.1
 
-* System dependencies
+## System dependencies
 
 - [factory_bot_rails](https://rubygems.org/gems/factory_bot_rails)
 - [faker](https://rubygems.org/gems/faker)
@@ -24,36 +24,40 @@ Things you may want to cover:
 - [rubocop](https://rubygems.org/gems/rubocop)
 - ...
 
-* Configuration
+## Configuration
 
 ```bash
 cp config/application.sample.yml config/application.yml 
 ```
 
-* Database creation
+## Database creation
 
 ```bash
 rails db:create 
 ```
 
-* Database initialization
+## Database initialization
 
-* How to run the test suite
+```bash
+TBD 
+```
+
+## How to run the test suite
 
 ```bash
 rspec . 
 ```
 
-* Services (job queues, cache servers, search engines, etc.)
+## Services (job queues, cache servers, search engines, etc.)
 
 ```bash
 TBD 
 ```
 
-* Deployment instructions
+## Deployment instructions
 
 ```bash
 TBD 
 ```
 
-* ...
+## ...
